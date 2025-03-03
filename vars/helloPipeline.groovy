@@ -48,10 +48,6 @@ def call(Map pipeParams) {
             success {
                 echo "Pipeline executed successfully for ${BRANCH_NAME} branch"
             }
- 
-            failure {
-                echo "Pipeline execution failed for ${BRANCH_NAME} branch"
-            }
         }
     }
 }
