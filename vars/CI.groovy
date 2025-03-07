@@ -40,7 +40,7 @@ def call(Map pipeParams) {
         post {
             success {
                 echo "CI Pipeline executed successfully for ${BRANCH_NAME} branch"
-		build job: "MultiBranch-CD-Pipeline(SL)/${BRANCH_NAME}", wait: true
+		build job: "CD-pipeline/${BRANCH_NAME}", wait: true
             }
  
             failure {
